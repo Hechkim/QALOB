@@ -144,7 +144,7 @@ if __name__ == "__main__":
     p.add_argument('--model-dir', required=True, action=fixPathAction, dest="model_dir", help="Saved models dir.")
     p.add_argument('--model', required=True, dest="model_name", choices=pathex.get_all_dir_names_startswith ( Path(__file__).parent / 'models' , 'Model_'), help="Model class name.")
     p.add_argument('--debug', action="store_true", dest="debug", default=False, help="Debug samples.")
-    p.add_argument('--no-preview', action="store_true", dest="no_preview", default=False, help="Disable preview window.")
+    p.add_argument('--no-preview', action="store_true", dest="no_preview", default=True, help="Disable preview window.")
     p.add_argument('--force-model-name', dest="force_model_name", default=None, help="Forcing to choose model name from model/ folder.")
     p.add_argument('--cpu-only', action="store_true", dest="cpu_only", default=False, help="Train on CPU.")
     p.add_argument('--force-gpu-idxs', dest="force_gpu_idxs", default=None, help="Force to choose GPU indexes separated by comma.")
