@@ -7,7 +7,7 @@ import time
 from pathlib import Path
 from core.interact import interact as io
 
-
+#aaaa
 class Device(object):
     def __init__(self, index, tf_dev_type, name, total_mem, free_mem):
         self.index = index
